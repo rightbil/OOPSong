@@ -1,8 +1,14 @@
 package com.company;
 
-public class TranscriptApp {
+import java.util.Scanner;
 
+public class TranscriptApp {
     public static void main(String[] args) {
-	// write your code here
+        Scanner sc = new Scanner(System.in);
+        Transcript t = new Transcript();
+        t.addStudent();
+        boolean wantToContinue = true;
+        t.addCourse();
+        t.displayInfo();
     }
 }
